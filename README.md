@@ -36,7 +36,8 @@ The page should contain the following elements:
     * Should contain 3-5 links
   * Title image
     * HTML element with text styled to be in the middle of this image - your site name
-* Main content ***OPTIONAL: use grid instead of flex for this part***
+* Main content
+  * ***OPTIONAL TASK: use grid instead of flex for this part***
   * 11 cards, evenly distributed maximum 3 per row. Cards should consist of:
     * Card header image
     * Card title
