@@ -41,6 +41,7 @@ The page should contain the following elements:
     * Card header image
     * Card title
     * Card content - a paragraph of text
+    * "Details" button (should not do anything at this time)
 * Footer
   * Two columns, 2-4 links each, oriented vertically
 
