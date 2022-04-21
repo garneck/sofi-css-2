@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "css": "node-sass --include-path scss index.scss index.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
+  },
   "dependencies": {
     "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
   }
 }
