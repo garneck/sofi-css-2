@@ -117,6 +117,54 @@ body {
       cursor: pointer;
       transform: scale(1.04) perspective(10px); }
 
+.footer {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+  background-color: #264653; }
+  .footer__column {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0px; }
+  .footer__links-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    list-style: none; }
+  .footer__link {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.445); }
+    .footer__link::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      border-radius: 4px;
+      background-color: rgba(245, 245, 245, 0.445); }
+    .footer__link:hover::before {
+      transform-origin: left;
+      transform: scaleX(1); }
+  .footer__separator {
+    width: 1px;
+    height: 65%;
+    border-right: 1px solid;
+    border-color: rgba(245, 245, 245, 0.445); }
+
 @media screen and (min-width: 2080px) {
   .card {
     width: 600px;
