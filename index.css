@@ -8,7 +8,7 @@ body {
   height: 100%; }
 
 .wrapper {
-  height: inherit;
+  min-height: 100%;
   background-color: #2a9d8f; }
 
 .header {
@@ -67,3 +67,72 @@ body {
   letter-spacing: 25px;
   color: whitesmoke;
   background-color: #e76f51; }
+
+.content-wrapper {
+  min-height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 40px 0px 40px; }
+
+.card {
+  width: 400px;
+  height: 480px;
+  margin: 50px 50px 80px 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); }
+  .card__top {
+    height: 35%;
+    border-radius: 7px 7px 0px 0px;
+    background-color: rgba(244, 162, 97, 0.75); }
+  .card__bottom {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 32px;
+    border-radius: 0px 0px 7px 7px;
+    background-color: rgba(255, 255, 255, 0.92); }
+  .card__title {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px; }
+  .card__content {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: justify; }
+  .card__button {
+    width: 140px;
+    height: 40px;
+    align-self: center;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(231, 142, 69, 0.281);
+    background-color: rgba(231, 142, 69, 0.445);
+    font-size: 14px;
+    letter-spacing: 3px;
+    transition: all 180ms ease-in-out; }
+    .card__button:hover {
+      cursor: pointer;
+      transform: scale(1.04) perspective(10px); }
+
+@media screen and (min-width: 2080px) {
+  .card {
+    width: 600px;
+    height: 680px; }
+    .card__bottom {
+      padding: 20px 40px; }
+    .card__title {
+      font-size: 50px;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .card__content {
+      font-size: 28px;
+      line-height: 37px; }
+    .card__button {
+      width: 190px;
+      height: 60px;
+      border-radius: 50px;
+      border-width: 3px;
+      font-size: 20px; } }
